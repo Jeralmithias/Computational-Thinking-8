@@ -41,11 +41,13 @@ time.sleep(1.0)
 # # Section 4 - Racing
 # # TODO - set how much each variable changes by and increase the number of repeats to at least 30
 # # TODO - explain here which sprites are faster or slower
-for i in range(20):
-    x1 += random.randint(0,35)
-    x2 += random.randint(0,35)
-    x3 += random.randint(0,35)
-    x4 += random.randint(0,35)
+# sprite 1 is the fastest sprite in theory because it has the highest low value of all the sprites
+# sprite 3 and 4 are the slowest because in theory they would on avrage go less distance than the other 2 becouse of their higher points unless sprite 2 gets un lucky and roles a -1 
+for i in range(30):
+    x1 += random.randint(5,15)
+    x2 += random.randint(-1,18)
+    x3 += random.randint(0,15)
+    x4 += random.randint(0,15)
     t1.goto(x1, y1)
     t2.goto(x2, y2)
     t3.goto(x3, y3)
